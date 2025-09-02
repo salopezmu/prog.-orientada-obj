@@ -9,6 +9,7 @@ def primo(n):
     return True
 
 while(continuar==True):
+    print("si desea salir del programa digite un numero negativo")
     num = int(input("Ingrese un numero entero: "))
     if num < 0:
         continuar=False

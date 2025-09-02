@@ -1,3 +1,4 @@
+continuar=True
 def primo(n):
     count=0
     if n < 2:
@@ -7,8 +8,11 @@ def primo(n):
             return False
     return True
 
-num = int(input("Ingrese un numero entero: "))
-if primo(num):
-    print(f"el numero {num} es primo.")
-else:
-    print(f"el numero {num} no es primo.")
+while(continuar==True):
+    num = int(input("Ingrese un numero entero: "))
+    if num < 0:
+        continuar=False
+    elif primo(num):
+        print(f"el numero {num} es primo.")
+    else:
+        print(f"el numero {num} no es primo.")
